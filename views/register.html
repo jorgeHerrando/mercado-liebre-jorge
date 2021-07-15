@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MercadoLiebre - Log in</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="logo">
+          <a href="/">
+            <img
+              src="images/logo-mercado-liebre.svg"
+              alt="Logo de MercadoLiebre"
+            />
+          </a>
+        </div>
+        <form action="#" method="GET" class="form-search">
+          <div class="input-icon">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Buscar productos, marcas y más"
+            />
+            <a href="#"><i class="fa fa-search"></i></a>
+          </div>
+        </form>
+        <p>
+          <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta
+          de crédito
+        </p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Tiendas Oficiales</a></li>
+          <li><a href="#">Vender</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul>
+          <li>
+            <a href="register">Creá tu cuenta <i class="far fa-id-card"></i></a>
+          </li>
+          <li>
+            <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+          </li>
+          <li>
+            <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="burger-menu">
+        <i class="fa fa-bars burger"></i>
+      </div>
+    </header>
+    <main>
+      <form action="/" method="POST">
+        <div class="form-control">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Nombre y apellido"
+            class="wide-input"
+          />
+        </div>
+
+        <div class="form-control">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Nombre de usuario"
+            class="wide-input"
+          />
+        </div>
+
+        <div class="form-control">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+            class="wide-input"
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="dob" class="form-legend">Fecha de nacimiento</label>
+          <input type="date" name="dob" id="dob" class="wide-input" />
+        </div>
+
+        <div class="form-control">
+          <input
+            type="text"
+            name="address"
+            id="address"
+            placeholder="Domicilio"
+            class="wide-input"
+          />
+        </div>
+
+        <div class="form-control">
+          <legend class="form-legend">Perfil del usuario</legend>
+          <div class="radio-flex">
+            <div>
+              <input
+                type="radio"
+                name="user-role"
+                id="buy"
+                value="buy"
+                class="radio"
+              />
+              <label for="buy"> Comprador</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                name="user-role"
+                id="sell"
+                value="sell"
+                class="radio"
+              />
+              <label for="sell"> Vendedor</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-control">
+          <legend class="form-legend">Intereses</legend>
+          <label for="electro" class="checkbox-label">
+            <input
+              type="checkbox"
+              name="interests"
+              id="electro"
+              value="electro"
+              class="checkbox"
+            />
+            Electro
+          </label>
+
+          <label for="fashion" class="checkbox-label">
+            <input
+              type="checkbox"
+              name="interests"
+              id="fashion"
+              value="fashion"
+              class="checkbox"
+            />
+            Moda</label
+          >
+
+          <label for="hogar" class="checkbox-label">
+            <input
+              type="checkbox"
+              name="interests"
+              id="hogar"
+              value="hogar"
+              class="checkbox"
+            />
+            Hogar</label
+          >
+
+          <label for="toys" class="checkbox-label">
+            <input
+              type="checkbox"
+              name="interests"
+              id="toys"
+              value="toys"
+              class="checkbox"
+            />
+            Juguetería</label
+          >
+
+          <label for="health" class="checkbox-label">
+            <input
+              type="checkbox"
+              name="interests"
+              id="health"
+              value="health"
+              class="checkbox"
+            />
+            Vida sana</label
+          >
+        </div>
+
+        <div class="form-control">
+          <label for="profile-picture" class="form-legend"
+            >Foto de usuario</label
+          >
+          <input
+            type="file"
+            name="profile-picture"
+            id="profile-picture"
+            accept=".jpg,.png"
+            class="wide-input picture-input"
+          />
+        </div>
+
+        <div class="form-control">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            class="wide-input"
+          />
+        </div>
+
+        <div class="form-control">
+          <input
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+            placeholder="Confirm password"
+            class="wide-input"
+          />
+        </div>
+
+        <div class="form-control">
+          <button type="reset">Borrar</button>
+          <button type="submit" id="submit">Enviar</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
